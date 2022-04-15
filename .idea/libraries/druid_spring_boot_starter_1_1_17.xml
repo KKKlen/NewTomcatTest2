@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="druid-spring-boot-starter-1.1.17">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LoggingTest/web/WEB-INF/lib/druid-spring-boot-starter-1.1.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

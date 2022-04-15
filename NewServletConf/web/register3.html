@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        /*
+        * 点击超链接或者图片，需要换一张
+        * 1、给超链接和图片去绑定单击事件
+        * 2、重新设置图片的src值
+        * */
+        window.onload = function (){
+            //1、获取图片对象
+            var img = document.getElementById("checkcode");
+            //2、绑定单击事件
+            img.onclick = function () {
+                //加时间戳
+                var date = new Date().getTime();
+                //因为换图片是需要重新缓存的，但获得的src是没变的，所以图片一直还是缓存中的那一张
+                //我们使用时间戳，加到src后面作为传参，即不同的src，重新分配图片
+                img.src = "/NewServletConf_war_exploded/checkCodeServlet?"+date;
+            }
+        }
+    </script>
+
+
+
+</head>
+
+
+
+<body>
+
+    <img id="checkcode" src="/NewServletConf_war_exploded/checkCodeServlet"/>
+    <a id="change" href="">看不清换一张？</a>
+<!--    <form action="register" method="post">-->
+<!--        <input type="text" placeholder="请输入用户名" name="username"><br>-->
+<!--        <input type="password" placeholder="请输入密码" name="password"><br>-->
+<!--        <input type="submit" value="注册">-->
+<!--    </form>-->
+</body>
+</html>
