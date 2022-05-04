@@ -29,6 +29,7 @@ public class LoginServlet extends HttpServlet {
         String checkCode_session = (String) session.getAttribute("checkCode_session");
         //删除session中存储的验证码
         session.removeAttribute("checkCode_session");
+
         //判断验证码是否正确
         //忽略大小写比较"".equalsIgnoreCase()
         if (checkCode_session!=null&&checkCode_session.equalsIgnoreCase(checkCode)){

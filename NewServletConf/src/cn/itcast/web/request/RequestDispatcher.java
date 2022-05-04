@@ -13,7 +13,7 @@ public class RequestDispatcher extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("dispatcher~被访问");
         //存储数据到request域中，实现共享数据
-        req.setAttribute("msg","hello");
+        req.setAttribute("msg","dispatcher2~获取请求参数成功");
         req.getRequestDispatcher("/dispatcher2").forward(req,resp);
 
     }

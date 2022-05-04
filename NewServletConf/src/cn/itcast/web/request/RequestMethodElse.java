@@ -18,7 +18,7 @@ public class RequestMethodElse extends HttpServlet {
         //获取请求参数
         /**根据请求参数名称获取参数值,如url后的?username=zs&password=123*/
         String username = req.getParameter("username");
-        System.out.println("Get");
+        System.out.println("Get--");
         System.out.println(username);
         /**根据参数名称获取参数值的数组,如hobby=xx&hobby=xxx*/
         String[] hobbies = req.getParameterValues("hobby");
@@ -29,10 +29,8 @@ public class RequestMethodElse extends HttpServlet {
         Enumeration<String> parameterNames = req.getParameterNames();
         while (parameterNames.hasMoreElements()){
             String name = parameterNames.nextElement();
-            System.out.println(name);
             String value = req.getParameter(name);
-            System.out.println(value);
-            System.out.println("---------");
+            System.out.println(name+"----"+value);
         }
         /**获取所有参数的map集合*/
         Map<String, String[]> parameterMap = req.getParameterMap();

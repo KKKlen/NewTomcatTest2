@@ -25,27 +25,27 @@ public class RequestHeader extends HttpServlet {
          */
         //1、获取请求方式
         String method = request.getMethod();
-        System.out.println(method);
+        System.out.println("method:"+method);
         //2、(*)获取虚拟目录
         String contextPath = request.getContextPath();
-        System.out.println(contextPath);
+        System.out.println("contextPath:"+contextPath);
         //3、获取Servlet路径
         String servletPath = request.getServletPath();
-        System.out.println(servletPath);
+        System.out.println("servletPath:"+servletPath);
         //4、获取GET方式请求参数
         String queryString = request.getQueryString();
-        System.out.println(queryString);
+        System.out.println("queryString:"+queryString);
         //5、(*)获取请求URI
         String requestURI = request.getRequestURI();
         StringBuffer requestURL = request.getRequestURL();
-        System.out.println(requestURI);
-        System.out.println(requestURL);
+        System.out.println("requestURI:"+requestURI);
+        System.out.println("requestURL:"+requestURL);
         //6、获取协议版本
         String protocol = request.getProtocol();
-        System.out.println(protocol);
+        System.out.println("protocol:"+protocol);
         //7、获取客户机IP地址
         String remoteAddr = request.getRemoteAddr();
-        System.out.println(remoteAddr);
+        System.out.println("remoteAddr:"+remoteAddr);
 
         /**请求头数据
          *  String getHeader(String name)：通过请求头的名称获取请求头的值

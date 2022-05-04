@@ -63,7 +63,8 @@
     <h3>获取Map集合中的值</h3>
     ${requestScope.map.gender}<br>
     ${map["gender"]}<br>
-    ${map.user.username}
+    ${map.user.username}<br>
+    ${map["user"].username}
 
 </body>
 </html>

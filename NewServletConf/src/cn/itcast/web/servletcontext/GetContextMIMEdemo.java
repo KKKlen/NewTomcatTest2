@@ -31,7 +31,7 @@ public class GetContextMIMEdemo extends HttpServlet {
         String filename = "a.jpg";
         //获取MIME类型
         String mimeType = context.getMimeType(filename);
-        System.out.println(mimeType);
+        System.out.println("[MIME]a.jpg:"+mimeType);
 
         Object msg = context.getAttribute("msg");
         System.out.println(msg);

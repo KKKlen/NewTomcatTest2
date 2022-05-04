@@ -28,7 +28,7 @@ public class Cookiedemo extends HttpServlet {
         //即cookie.setpath("/NewServletConf_war_exploded")
         //如果要共享，则可以将cookie.setPath置为("/")，
         //运行在当前服务器下的所有pro都可以共享cookie信息
-        cookie.setPath("/");
+//        cookie.setPath("/");
 
         //发送Cookie对象
         response.addCookie(cookie);

@@ -33,6 +33,7 @@
                     System.out.println("解码前的value："+value);
                     //URL解码
                     value = URLDecoder.decode(value,"utf-8");
+                    System.out.println("解码后的value："+value);
     %>
                     <h1>欢迎回来，你上次最后访问时间为:<%=value%></h1>
     <%

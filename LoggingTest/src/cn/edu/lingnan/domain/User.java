@@ -19,6 +19,10 @@ public class User {
     public User() {
     }
 
+    /**
+     * 逻辑视图
+     * @return
+     */
     public String getBirToStr(){
         if (birthday!=null){
             //格式化日期对象

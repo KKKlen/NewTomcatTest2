@@ -28,9 +28,11 @@ public class CookieMaxAgedemo extends HttpServlet {
          */
 
         Cookie cookie = new Cookie("msg", "MaxAge");
-        cookie.setMaxAge(300);
-        cookie.setMaxAge(-1);
-        cookie.setMaxAge(0);
+//        cookie.setMaxAge(300);
+//        cookie.setMaxAge(-1);
+//        cookie.setMaxAge(0);
         response.addCookie(cookie);
+//        String path = cookie.getPath();
+//        System.out.println(path);
     }
 }

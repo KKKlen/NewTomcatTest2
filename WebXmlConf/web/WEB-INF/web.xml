@@ -7,6 +7,7 @@
     <servlet>
         <servlet-name>demo</servlet-name>
         <servlet-class>cn.itcast.web.servlet.demo</servlet-class>
+        <load-on-startup>-1</load-on-startup>
     </servlet>				<!--1、Tomcat将全类名对应的字节码文件加载进内存 Class.forName
     2、创建对象 cls.newInstance();-->
     <servlet-mapping>			<!--3、调用其方法——srvice();-->

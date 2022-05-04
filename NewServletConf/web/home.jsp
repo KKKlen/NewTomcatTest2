@@ -33,6 +33,7 @@
                     System.out.println("解码前的value："+value);
                     //URL解码
                     value = URLDecoder.decode(value,"utf-8");
+                    System.out.println("解码后的value："+value);
     %>
                     <h1>欢迎回来，你上次最后访问时间为:<%=value%></h1>
     <%
@@ -47,7 +48,7 @@
                     System.out.println("编码后的数据："+str_date);
                     cookie.setValue(str_date);
                     //设置Cookie的存活时间
-                    cookie.setMaxAge(60*30);
+                    cookie.setMaxAge(60*5);
                     response.addCookie(cookie);
 
                     break;
@@ -66,7 +67,7 @@
 
             Cookie cookie = new Cookie("lastTime",str_date);
             //设置Cookie的存活时间
-            cookie.setMaxAge(60*60*24*30);
+            cookie.setMaxAge(60*5);
             response.addCookie(cookie);
     %>
             //响应数据
